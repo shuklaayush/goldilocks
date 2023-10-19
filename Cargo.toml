@@ -1,0 +1,15 @@
+[package]
+name = "goldilocks"
+version = "0.1.0"
+edition = "2021"
+authors = ["zhenfei zhang <zhenfei.zhang@hotmail.com>"]
+
+[dependencies]
+subtle = "2.4"
+ff = { version = "0.13.0", default-features = false, features = ["std"] }
+rand_core = { version = "0.6", default-features = false }
+
+[dev-dependencies]
+criterion = { version = "0.3", features = ["html_reports"] }
+rand_xorshift = "0.3"
+ark-std = { version = "0.3", features = ["print-trace"] }
